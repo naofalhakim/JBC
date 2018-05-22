@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_event"
+            android:title="Events"
+            />
+        <item
+            android:id="@+id/nav_konsumsi"
+            android:title="Konsumsi"
+             />
+        <item
+            android:id="@+id/nav_lacak"
+            android:title="Lacak" />
+        <item
+            android:id="@+id/nav_logistik"
+            android:title="Logistik" />
+        <item
+            android:id="@+id/nav_attribut"
+            android:title="Attribut" />
+    </group>
+
+    <item android:title="" >
+        <menu>
+            <item
+                android:id="@+id/nav_bantuan"
+                android:title="Bantuan" />
+            <item
+                android:id="@+id/nav_kebijakan"
+                android:title="Kebijakan" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "176657762765",
+    "firebase_url": "https://vendport-92a0b.firebaseio.com",
+    "project_id": "vendport-92a0b",
+    "storage_bucket": "vendport-92a0b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:176657762765:android:9d2729091a12a98d",
+        "android_client_info": {
+          "package_name": "id.co.venport.vendorportalandroidapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "176657762765-hgqvfe93kqos6psruv6vb3gje401uj5o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVGgBjodpvdhd5jx4SyFu5wS6Mh7gbZw4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
