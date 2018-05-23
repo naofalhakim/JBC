@@ -1,44 +1,50 @@
 package id.co.venport.vendorportalandroidapplication.model;
 
+import java.util.ArrayList;
+
 /**
- * Created by user on 14/05/2018.
+ * Created by user on 23/05/2018.
  */
 
-public class Vendor extends User{
-    private String deskripsi;
-    private int id, image;
+public class Vendor extends User {
+    private String namaVendor;
+    private ArrayList<Barang> barangs;
+
+    public Vendor(String email, String nama, String alamat, String username, String password, String noHP, String namaVendor) {
+        super(email, nama, alamat, username, password, noHP);
+        this.namaVendor = namaVendor;
+        this.barangs = new ArrayList();
+    }
+
+    public Vendor(String namaVendor, ArrayList<Barang> barangs) {
+        this.namaVendor = namaVendor;
+        this.barangs = barangs;
+    }
 
     public Vendor() {
     }
 
-    public Vendor(String email, String nama, String alamat, String username, String password, int noHP, String deskripsi, int id, int image) {
-        super(email, nama, alamat, username, password, noHP);
-        this.deskripsi = deskripsi;
-        this.id = id;
-        this.image = image;
+    public String getNamaVendor() {
+        return namaVendor;
     }
 
-    public String getDeskripsi() {
-        return deskripsi;
+    public void setNamaVendor(String namaVendor) {
+        this.namaVendor = namaVendor;
     }
 
-    public void setDeskripsi(String deskripsi) {
-        this.deskripsi = deskripsi;
+    public void tambahBarang(Barang barang){
+        barangs.add(barang);
     }
 
-    public int getId() {
-        return id;
+    public void isiBarang(ArrayList<Barang> barang){
+        this.barangs = barang;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public Barang getBarang(int i){
+        return barangs.get(i);
     }
 
-    public int getImage() {
-        return image;
-    }
-
-    public void setImage(int image) {
-        this.image = image;
+    public ArrayList<Barang> getBarangs() {
+        return barangs;
     }
 }

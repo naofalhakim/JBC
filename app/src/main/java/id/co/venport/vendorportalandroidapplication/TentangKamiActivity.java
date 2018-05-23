@@ -8,22 +8,22 @@ import android.widget.Button;
 
 
 public class TentangKamiActivity extends AppCompatActivity {
-    private Button backButton;
+//    private Button backButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tentang_kami);
 
-        backButton = (Button)findViewById(R.id.backButton);
+//        backButton = (Button) findViewById(R.id.backButton);
 
-        backButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                startActivity(new Intent(TentangKamiActivity.this,HomePageActivity.class));
-                finish();
-            }
-        });
+//        backButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                startActivity(new Intent(TentangKamiActivity.this,HomePageActivity.class));
+//                finish();
+//            }
+//        });
     }
 }

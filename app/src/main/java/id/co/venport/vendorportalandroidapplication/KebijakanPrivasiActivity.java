@@ -9,22 +9,22 @@ import android.widget.Button;
 
 
 public class KebijakanPrivasiActivity extends AppCompatActivity {
-    private Button backButton;
+//    private Button backButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_kebijakan_privasi);
 
-        backButton = (Button)findViewById(R.id.backButton);
+//        backButton = (Button)findViewById(R.id.backButton);
 
-        backButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                startActivity(new Intent(KebijakanPrivasiActivity.this,HomePageActivity.class));
-                finish();
-            }
-        });
+//        backButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                startActivity(new Intent(KebijakanPrivasiActivity.this,HomePageActivity.class));
+//                finish();
+//            }
+//        });
     }
 }
