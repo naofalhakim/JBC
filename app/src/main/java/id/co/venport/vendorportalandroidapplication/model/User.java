@@ -6,7 +6,7 @@ package id.co.venport.vendorportalandroidapplication.model;
 
 public class User {
     private String email, nama, alamat, username, password;
-    private int noHP;
+    private String noHP;
 
     public String getEmail() {
         return email;
@@ -48,15 +48,15 @@ public class User {
         this.password = password;
     }
 
-    public int getNoHP() {
+    public String getNoHP() {
         return noHP;
     }
 
-    public void setNoHP(int noHP) {
+    public void setNoHP(String noHP) {
         this.noHP = noHP;
     }
 
-    public User(String email, String nama, String alamat, String username, String password, int noHP) {
+    public User(String email, String nama, String alamat, String username, String password, String noHP) {
 
         this.email = email;
         this.nama = nama;

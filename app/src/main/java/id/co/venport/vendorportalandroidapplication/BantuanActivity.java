@@ -8,22 +8,22 @@ import android.widget.Button;
 
 
 public class BantuanActivity extends AppCompatActivity {
-    private Button backButton;
+//    private Button backButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bantuan);
 
-        backButton = (Button)findViewById(R.id.backButton);
-
-        backButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                startActivity(new Intent(BantuanActivity.this,HomePageActivity.class));
-                finish();
-            }
-        });
+//        backButton = (Button)findViewById(R.id.backButton);
+//
+//        backButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//                startActivity(new Intent(BantuanActivity.this,HomePageActivity.class));
+//                finish();
+//            }
+//        });
     }
 }

@@ -1,16 +1,11 @@
 package id.co.venport.vendorportalandroidapplication.mainmenu;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.Layout;
 import android.text.SpannableString;
 import android.text.style.AlignmentSpan;
-import android.view.Gravity;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -22,16 +17,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 
 import id.co.venport.vendorportalandroidapplication.AppConfig.PreferenceLogin;
 import id.co.venport.vendorportalandroidapplication.R;
 import id.co.venport.vendorportalandroidapplication.fragmentMenu.EventFragment;
-import id.co.venport.vendorportalandroidapplication.fragmentMenu.EventRecyclerViewAdapter;
-import id.co.venport.vendorportalandroidapplication.fragmentMenu.EventsFragment;
+import id.co.venport.vendorportalandroidapplication.fragmentMenu.LogistikFragment;
 import id.co.venport.vendorportalandroidapplication.model.Event;
 
 public class MenuActivity extends AppCompatActivity
@@ -145,7 +137,7 @@ public class MenuActivity extends AppCompatActivity
             getSupportActionBar().setTitle("Konsumsi");
         } else if (id == R.id.nav_logistik) {
             getSupportActionBar().setTitle("Logistik");
-            ft.replace(R.id.fragment,new EventFragment());
+            ft.replace(R.id.fragment,new LogistikFragment());
         } else if (id == R.id.nav_attribut) {
             ft.replace(R.id.fragment,new EventFragment());
             getSupportActionBar().setTitle("Attribut");

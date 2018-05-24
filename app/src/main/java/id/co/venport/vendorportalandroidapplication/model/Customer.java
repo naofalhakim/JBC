@@ -27,7 +27,7 @@ public class Customer extends User {
         this.noKtp = noKtp;
     }
 
-    public Customer(String email, String nama, String alamat, String username, String password, int noHP, String TTL, String noKtp) {
+    public Customer(String email, String nama, String alamat, String username, String password, String noHP, String TTL, String noKtp) {
         super(email, nama, alamat, username, password, noHP);
         this.TTL = TTL;
         this.noKtp = noKtp;
