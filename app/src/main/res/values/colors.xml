@@ -4,10 +4,12 @@
     <color name="colorPrimaryDark">#18AD71</color>
     <color name="colorAccent">#669F41</color>
 
+    <color name="black">#000000</color>
     <color name="colorFont">#363637</color>
     <color name="colorDefault">#9EB3DD</color>
     <color name="white">#ffffff</color>
     <color name="orangeButton">#F2C94C</color>
+    <color name="orangePekat">#e8bc37</color>
     <color name="greyFont">#bfbfbf</color>
     <color name="greyDarkFont">#8e8e8e</color>
     <color name="light_grey">#ECEFF1</color>

@@ -34,9 +34,10 @@ public class EventFragment extends Fragment {
 
         gambar.add(R.drawable.poster);
 
-        eventArrayList.add(new Event("Paramabudaya","Acara budaya ada jawa yang di selenggarakan UKM Daerah Jawa","Gedung Serba Guna Telkom University","7PM","Ketua Panitia Paramabudaya",0,gambar.get(0)));
-        eventArrayList.add(new Event("Paramabudaya","Acara budaya ada jawa yang di selenggarakan UKM Daerah Jawa","Gedung Serba Guna Telkom University","7PM","Ketua Panitia Paramabudaya",1,gambar.get(0)));
-        eventArrayList.add(new Event("Paramabudaya","Acara budaya ada jawa yang di selenggarakan UKM Daerah Jawa","Gedung Serba Guna Telkom University","7PM","Ketua Panitia Paramabudaya",2,gambar.get(0)));
+        eventArrayList.add(new Event("Paramabudaya","Acara budaya ada jawa yang di selenggarakan UKM Daerah Jawa","GSG TelU","07:00PM","UKM Jawa - Telkom",0,gambar.get(0), "Free Entry","2 Agustus 2018"));
+        eventArrayList.add(new Event("Paramabudaya","Acara budaya ada jawa yang di selenggarakan UKM Daerah Jawa","GSG TelU","07:00PM","UKM Jawa - Telkom",0,gambar.get(0), "Free Entry","2 Agustus 2018"));
+        eventArrayList.add(new Event("Paramabudaya","Acara budaya ada jawa yang di selenggarakan UKM Daerah Jawa","GSG TelU","07:00PM","UKM Jawa - Telkom",0,gambar.get(0), "Free Entry","2 Agustus 2018"));
+        eventArrayList.add(new Event("Paramabudaya","Acara budaya ada jawa yang di selenggarakan UKM Daerah Jawa","GSG TelU","07:00PM","UKM Jawa - Telkom",0,gambar.get(0), "Free Entry","2 Agustus 2018"));
 
         recyclerView = (RecyclerView) view.findViewById(R.id.list);
         recyclerView.setLayoutManager(new LinearLayoutManager(this.getContext()));

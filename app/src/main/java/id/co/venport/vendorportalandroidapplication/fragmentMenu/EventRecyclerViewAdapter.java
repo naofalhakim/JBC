@@ -36,9 +36,12 @@ public class EventRecyclerViewAdapter extends RecyclerView.Adapter<EventRecycler
     public void onBindViewHolder(final ViewHolder holder, int position) {
         holder.mItem = mValues.get(position);
         holder.mIdView.setText(mValues.get(position).getJudul());
-        holder.mContentView.setText(mValues.get(position).getDeskripsi());
+        //holder.mContentView.setText(mValues.get(position).getDeskripsi());
         holder.pembuat.setText(mValues.get(position).getPembuat());
+        holder.tanggal.setText(mValues.get(position).getTanggal());
         holder.imageView.setImageResource(mValues.get(position).getImage());
+        holder.status.setText(mValues.get(position).getStatus()+" ");
+        holder.lokasi.setText(mValues.get(position).getTempat()+" ");
     }
 
     @Override
@@ -48,24 +51,31 @@ public class EventRecyclerViewAdapter extends RecyclerView.Adapter<EventRecycler
 
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
         public final TextView mIdView;
-        public final TextView mContentView;
+        //public final TextView mContentView;
         public final TextView pembuat;
+        public final TextView tanggal;
         public ImageView imageView;
+        public final TextView status;
+        public final TextView lokasi;
 
         public Event mItem;
 
         public ViewHolder(View view) {
             super(view);
             mIdView = (TextView) view.findViewById(R.id.txtJudul);
-            mContentView = (TextView) view.findViewById(R.id.txtDeskripsi);
-            imageView = (ImageView) view.findViewById(R.id.imgPoster);
             pembuat = (TextView) view.findViewById(R.id.txtPembuat);
+            tanggal = (TextView) view.findViewById(R.id.txtTanggal);
+            //mContentView = (TextView) view.findViewById(R.id.txtDeskripsi);
+            imageView = (ImageView) view.findViewById(R.id.imgPoster);
+            status = (TextView) view.findViewById(R.id.txtstatus);
+            lokasi = (TextView) view.findViewById(R.id.txtlokasi);
+
             view.setOnClickListener(this);
         }
 
         @Override
         public String toString() {
-            return super.toString() + " '" + mContentView.getText() + "'";
+            return super.toString() + " '" + "'";
         }
 
         @Override

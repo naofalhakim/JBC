@@ -5,13 +5,13 @@ package id.co.venport.vendorportalandroidapplication.model;
  */
 
 public class Event {
-    private String judul, deskripsi, tempat, waktu, pembuat;
+    private String judul, deskripsi, tempat, waktu, pembuat, status, tanggal;
     private int id,image;
 
     public Event() {
     }
 
-    public Event(String judul, String deskripsi, String tempat, String waktu, String pembuat, int id,int gambar) {
+    public Event(String judul, String deskripsi, String tempat, String waktu, String pembuat, int id, int gambar, String status, String tanggal) {
         this.judul = judul;
         this.deskripsi = deskripsi;
         this.tempat = tempat;
@@ -19,6 +19,8 @@ public class Event {
         this.pembuat = pembuat;
         this.id = id;
         this.image = gambar;
+        this.status = status;
+        this.tanggal = tanggal;
     }
 
     public String getJudul() {
@@ -75,5 +77,21 @@ public class Event {
 
     public void setImage(int image) {
         this.image = image;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    public String getTanggal() {
+        return tanggal;
+    }
+
+    public void setTanggal(String tanggal) {
+        this.tanggal = tanggal;
     }
 }
