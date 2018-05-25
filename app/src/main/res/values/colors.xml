@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#1ABC83</color>
+    <color name="colorPrimaryLight">#22d194</color>
     <color name="colorPrimaryDark">#18AD71</color>
     <color name="colorPrimaryDarkTransparent">#2218AD71</color>
     <color name="colorAccent">#669F41</color>
@@ -12,6 +13,7 @@
     <color name="orangeButton">#F2C94C</color>
     <color name="orangePekat">#e8bc37</color>
     <color name="greyFont">#bfbfbf</color>
+    <color name="cardBack">#ECEFF1</color>
     <color name="greyDarkFont">#8e8e8e</color>
     <color name="light_grey">#ECEFF1</color>
 

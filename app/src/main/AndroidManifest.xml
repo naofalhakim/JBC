@@ -27,7 +27,8 @@
         <activity android:name=".SplashLoginRegister.SliderActivity" />
         <activity
             android:name=".mainmenu.MenuActivity"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
+        <activity android:name=".fragmentMenu.DetailEvent"></activity>
     </application>
 
 </manifest>

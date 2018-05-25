@@ -1,6 +1,7 @@
 package id.co.venport.vendorportalandroidapplication.fragmentMenu;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -80,7 +81,10 @@ public class EventRecyclerViewAdapter extends RecyclerView.Adapter<EventRecycler
 
         @Override
         public void onClick(View v) {
-            Toast.makeText(context,toString(),Toast.LENGTH_SHORT).show();
+            int position = getAdapterPosition();
+            //EndangeredItem contentTemp = mItems.get(position);
+            Intent intent = new Intent(context, DetailEvent.class);
+            context.startActivity(intent);
         }
     }
 }
