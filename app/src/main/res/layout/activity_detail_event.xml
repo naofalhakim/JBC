@@ -16,7 +16,8 @@
         android:layout_height="match_parent"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:fitsSystemWindows="true">
+        android:fitsSystemWindows="true"
+        >
 
         <android.support.design.widget.AppBarLayout
             android:id="@+id/MyAppbar"
@@ -24,7 +25,8 @@
             android:layout_height="wrap_content"
             android:theme="@style/AppTheme.AppBarOverlay"
             android:background="@color/cardBack"
-            app:toolbarId="@+id/MyAppbar">
+            app:toolbarId="@+id/MyAppbar"
+            >
             <!--content Scrim digunakan untuk memberi warna-->
             <android.support.design.widget.CollapsingToolbarLayout
                 android:id="@+id/MyCollapseToolbar"
@@ -37,13 +39,13 @@
                 <RelativeLayout
                     android:id="@+id/layout_top"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
 
                     <ImageView
-                        android:id="@+id/poster"
+                        android:id="@+id/posterAcara"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:scaleType="centerCrop"
                         android:src="@drawable/poster" />
 
                 </RelativeLayout>
@@ -62,7 +64,8 @@
                 android:layout_height="wrap_content"
                 android:background="@color/white"
                 android:orientation="vertical"
-                android:padding="10dp">
+                android:padding="10dp"
+                android:layout_marginBottom="5dp">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
@@ -133,7 +136,7 @@
                 android:id="@+id/cardView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_margin="7dp"
                 android:background="@color/white"
                 card_view:cardElevation="2dp">
 
@@ -229,6 +232,44 @@
                 </RelativeLayout>
 
             </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@color/white"
+                card_view:cardElevation="2dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/note"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Note Event"
+                        android:textColor="@color/colorFont"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+                    <LinearLayout
+                        android:id="@+id/contentNote"
+                        android:layout_below="@+id/note"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/noteAcara"
+                            android:text="Untuk info selebihnya bisa menghubungi OA dari UKM Jawa pada (@ukmDjawa/085258286221). Kami terbuka untuk semua kalangan dan juga media patnetr :)"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="13dp"
+                            android:textColor="@color/colorFont"/>
+                    </LinearLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
             <Button
                 android:id="@+id/btnOrderTicket"
                 android:text="Order Ticket"
@@ -236,8 +277,9 @@
                 android:layout_width="200dp"
                 android:layout_height="50dp"
                 android:background="@drawable/buttonorange"
-                android:layout_marginTop="10dp"
-                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="300dp"
                 />
         </android.support.design.widget.AppBarLayout>
     </android.support.design.widget.CoordinatorLayout>

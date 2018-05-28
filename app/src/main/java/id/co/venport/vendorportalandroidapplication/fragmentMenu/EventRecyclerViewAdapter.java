@@ -41,7 +41,11 @@ public class EventRecyclerViewAdapter extends RecyclerView.Adapter<EventRecycler
         holder.pembuat.setText(mValues.get(position).getPembuat());
         holder.tanggal.setText(mValues.get(position).getTanggal());
         holder.imageView.setImageResource(mValues.get(position).getImage());
-        holder.status.setText(mValues.get(position).getStatus()+" ");
+        if(mValues.get(position).getStatus()==0){
+            holder.status.setText("Free Entry ");
+        }else{
+            holder.status.setText("Rp "+mValues.get(position).getStatus()+" ");
+        }
         holder.lokasi.setText(mValues.get(position).getTempat()+" ");
     }
 
@@ -82,8 +86,17 @@ public class EventRecyclerViewAdapter extends RecyclerView.Adapter<EventRecycler
         @Override
         public void onClick(View v) {
             int position = getAdapterPosition();
-            //EndangeredItem contentTemp = mItems.get(position);
+            Event contentEvent = mValues.get(position);
             Intent intent = new Intent(context, DetailEvent.class);
+            intent.putExtra("judulAcara",contentEvent.getJudul());
+            intent.putExtra("pembuatAcara",contentEvent.getPembuat());
+            intent.putExtra("tanggalAcara",contentEvent.getTanggal());
+            intent.putExtra("statusAcara",contentEvent.getStatus());
+            intent.putExtra("tempatAcara",contentEvent.getTempat());
+            intent.putExtra("deskripsiAcara",contentEvent.getDeskripsi());
+            intent.putExtra("jamAcara",contentEvent.getWaktu());
+            intent.putExtra("noteAcara",contentEvent.getNote());
+            intent.putExtra("posterAcara",contentEvent.getImage());
             context.startActivity(intent);
         }
     }
